@@ -4,8 +4,13 @@ install npm json
 netify ,vercel
 locally install git 
 git-scm.com/downloads choose vscode as editor,. say
-
+install server.json
 create->
 index.html
 app.js
 styles.css
+
+https://github.com/prashantCuvette/JS-Capstone
+https://js-capstone-kohl.vercel.app/#login
+
+json-server --watch db.json --port 3000

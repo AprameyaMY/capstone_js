@@ -5,10 +5,56 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <!-- <script src="script.js" ></script> -->
-        <title>first JS projects</title>
+        <title>My Task and Notes</title>
+        <link rel="stylesheet" href="styles.css"> 
     </head>
     <body>
-        <h2 id="h2heading"> This is my First project</h2>
+        <header id='main-header'>
+            <div class="logo">My Projects</div>
+            <button class="hamburger" id=""hamburger-button>☰</button>
+            <nav id="desktop-nav">
+                <a href="#dashboard" id="nav-dashboard">Dashboard</a>
+                <a href="#tasks" id="nav-tasks">Tasks</a>
+                <a href="#notes" id="nav-notes">Notes</a>
+                <span id="user-info">UserInfo</span>
+                <!-- add nonr to below button -->
+                 <button id="logout-btn" style="display: none;">LogOut</button>
+            </nav>
+        </header>
+        <main>
+            <section id="login-section" class="page-section">
+                <h2>Login</h2>
+
+                <form id="login-form" class="auth-form">
+                    <input id="login-email" type="email" placeholder="Email" required />
+                    <input id="login-password" type="password" placeholder="password" required />
+                    
+                    <button type="submit">Login</button>
+                    
+                    <p>Don't have an account? <a href="#signup">Sign Up</a></p>
+                    
+                    <div id="login-errors" class="auth-error"></div>
+                </form>
+            </section>
+            <section id="signup-section" class="page-section">
+                <h2>Sign up</h2>
+
+                <form id="signup-form" class="auth-form">
+                    <input id="signup-username" type="text" placeholder="Username" required />
+                    <input id="signup-email" type="email" placeholder="Email" required />
+                    <input id="signup-password" type="password" placeholder="password" required />
+                    
+                    <button type="submit">SignIn</button>
+                    <p>Already have an account? <a href="#login">Login</a></p>
+                    <div id="signup-errors" class="auth-error"></div>
+                </form>
+            </section>
+                  <!-- Dashboard Section -->
+            <section id="dashboard-section" class="page-section">
+                
+            </section>
+        </main>
+        <!-- <h2 id="h2heading"> This is my First project</h2> -->
         <!-- <script src="./module.js" ></script> -->
     </body>
     <script src="./app.js" type="module"></script>
